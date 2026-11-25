@@ -2,8 +2,8 @@ import { Component, inject, signal } from '@angular/core';
 import { email, form, FormField, required, submit } from '@angular/forms/signals';
 import { moduleSummaryLine, QuoteStore } from '../quote.store';
 
-/** Cambialo por el correo real de tu equipo comercial. */
-const SALES_EMAIL = 'ventas@arcas-io.com';
+/** Correo al que llegan todas las solicitudes de cotización de clientes. */
+const SALES_EMAIL = 'arcas-io@yahoo.com';
 
 interface QuoteData {
   nombre: string;
