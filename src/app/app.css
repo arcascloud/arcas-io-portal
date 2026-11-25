@@ -1,0 +1,24 @@
+.quote {
+  background: var(--secondary);
+  margin-top: 32px;
+}
+
+.quote-grid {
+  display: grid;
+  gap: 40px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .quote-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.foot {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
