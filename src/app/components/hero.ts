@@ -15,8 +15,8 @@ import { NgOptimizedImage } from '@angular/common';
         <p class="kicker">ERP modular</p>
         <h1 class="title">Arma el sistema que tu empresa necesita, módulo por módulo.</h1>
         <p class="lead">
-          13 módulos integrados: ventas, inventario, finanzas, contabilidad y
-          personas. Con o sin automatización contable.
+          14 módulos integrados: ventas, inventario, finanzas, contabilidad y personas. Con o sin
+          automatización contable.
         </p>
         <a class="btn ghost" href="#modulos">Ver módulos</a>
       </div>
