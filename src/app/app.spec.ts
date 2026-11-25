@@ -10,7 +10,7 @@ describe('QuoteStore', () => {
     store = TestBed.runInInjectionContext(() => new QuoteStore());
   });
 
-  it('tiene los 13 módulos de Arcas-IO', () => {
+  it('tiene los 14 módulos de Arcas-IO', () => {
     expect(modules.length).toBe(13);
   });
 
