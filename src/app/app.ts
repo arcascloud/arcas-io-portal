@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { Hero } from './components/hero';
+import { Login } from './components/login';
 import { ModuleList } from './components/module-list';
 import { QuoteForm } from './components/quote-form';
 import { QuoteSummary } from './components/quote-summary';
 import { QuoteStore } from './quote.store';
 
 @Component({
-  imports: [Hero, ModuleList, QuoteSummary, QuoteForm],
+  imports: [Hero, ModuleList, Login, QuoteSummary, QuoteForm],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

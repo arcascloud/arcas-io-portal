@@ -22,3 +22,9 @@
   font-size: 0.875rem;
   color: var(--muted);
 }
+
+.foot a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
