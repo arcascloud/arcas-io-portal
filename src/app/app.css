@@ -1,3 +1,7 @@
+:host {
+  display: block;
+}
+
 .quote {
   background: var(--secondary);
   margin-top: 32px;

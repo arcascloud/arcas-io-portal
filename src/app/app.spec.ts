@@ -11,7 +11,7 @@ describe('QuoteStore', () => {
   });
 
   it('tiene los 14 módulos de Arcas-IO', () => {
-    expect(modules.length).toBe(13);
+    expect(modules.length).toBe(14);
   });
 
   it('filtra por categoría', () => {

@@ -1,0 +1,116 @@
+/*
+ * Paleta Arcas-IO: azul marino + acero, tomada del logo.
+ * Todo el color pasa por estas variables; los componentes no hardcodean tonos.
+ */
+:root {
+  --bg: oklch(0.975 0.005 250);
+  --fg: oklch(0.2 0.03 250);
+  --card: oklch(1 0 0);
+  --muted: oklch(0.5 0.03 250);
+  --border: oklch(0.89 0.012 250);
+  --primary: oklch(0.27 0.06 250);
+  --primary-fg: oklch(0.98 0.01 85);
+  --secondary: oklch(0.93 0.012 250);
+  --accent: oklch(0.82 0.06 230);
+  --accent-fg: oklch(0.2 0.03 250);
+  --hero: radial-gradient(
+      ellipse at 50% 0%,
+      oklch(0.45 0.07 245 / 70%),
+      transparent 60%
+    ),
+    linear-gradient(180deg, oklch(0.27 0.05 250), oklch(0.2 0.04 255));
+  --shadow-card: 0 20px 40px -24px oklch(0.27 0.06 250 / 35%);
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px; /* alto de la barra fija */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    "IBM Plex Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--fg);
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-fg);
+  font-weight: 600;
+}
+
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--fg);
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.field:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid oklch(0.6 0.1 240);
+  outline-offset: 2px;
+}

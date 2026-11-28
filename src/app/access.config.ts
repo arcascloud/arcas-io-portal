@@ -14,3 +14,10 @@ export const ACCESS_SERVICES = [
   { label: 'API (Render)', url: ACCESS_URLS.api },
   { label: 'HN (Cloudflare Workers)', url: ACCESS_URLS.hn },
 ] as const;
+
+/** Datos de contacto en un solo lugar (nav, formulario y pie de página). */
+export const CONTACT = {
+  whatsapp: '50494809806',
+  whatsappLabel: '+504 9480-9806',
+  email: 'arcas.io@yahoo.com',
+} as const;

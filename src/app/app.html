@@ -1,7 +1,10 @@
-<app-hero [count]="store.count()" />
+<app-navbar [count]="store.count()" />
+<app-hero />
 
 <main>
   <app-module-list />
+
+  <app-services />
 
   <app-login />
 
@@ -15,5 +18,7 @@
 
 <footer class="foot">
   © {{ year }} Arcas-IO · Contáctenos al WhatsApp:
-  <a href="https://wa.me/50494809806" target="_blank" rel="noopener noreferrer">+504 9480-9806</a>
+  <a [href]="'https://wa.me/' + contact.whatsapp" target="_blank" rel="noopener noreferrer">{{
+    contact.whatsappLabel
+  }}</a>
 </footer>

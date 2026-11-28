@@ -1,0 +1,24 @@
+<app-navbar [count]="store.count()" />
+<app-hero />
+
+<main>
+  <app-module-list />
+
+  <app-services />
+
+  <app-login />
+
+  <section id="cotizar" class="quote">
+    <div class="wrap quote-grid">
+      <app-quote-summary />
+      <app-quote-form />
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  © {{ year }} Arcas-IO · Contáctenos al WhatsApp:
+  <a [href]="'https://wa.me/' + contact.whatsapp" target="_blank" rel="noopener noreferrer">{{
+    contact.whatsappLabel
+  }}</a>
+</footer>
